@@ -1,6 +1,6 @@
 <template>
   <div class="taber">
-      <div class="taber-item" v-for="(item,index) in tabList" :key="index">
+      <div class="taber-item" @click="go" v-for="(item,index) in tabList" :key="index">
           <div class="icon">
               <i :class="item.icon" size="large"></i>
           </div>
@@ -32,6 +32,11 @@ export default {
                   text:"设置"
               }
           ]
+      }
+  },
+  methods:{
+      go(){
+          this.$router.push({path:"/setting"})
       }
   }
 }

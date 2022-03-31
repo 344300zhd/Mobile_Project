@@ -1,0 +1,65 @@
+// 淡入淡出
+.fade-enter, .fade-leave-to{
+    opacity: 0;
+}
+.fade-enter-to, .fade-leave{
+    opacity: 1;
+}
+.fade-enter-active, .fade-leave-active{
+    transition: all .5s;
+}
+
+// 缩放进出
+.scale-enter, .scale-leave-to{
+    transform: scale(0);
+}
+.scale-enter-to, .scale-leave{
+    transform: scale(1);
+}
+.scale-enter-active, .scale-leave-active{
+    transition: all .5s;
+}
+
+// 左侧进出
+.left-enter, .left-leave-to{
+    transform: translate3d(-100%,0,0);
+}
+.left-enter-to, .left-leave{
+    transform: translate3d(0,0,0);
+}
+.left-enter-active, .left-leave-active{
+    transition: all .5s;
+}
+
+// 右侧进出
+.right-enter, .right-leave-to{
+    transform: translate3d(100%,0,0);
+}
+.right-enter-to, .right-leave{
+    transform: translate3d(0,0,0);
+}
+.right-enter-active, .right-leave-active{
+    transition: all .5s;
+}
+
+// 顶部进出
+.top-enter, .top-leave-to{
+    transform: translate3d(0,-100%,0);
+}
+.top-enter-to, .top-leave{
+    transform: translate3d(0,0,0);
+}
+.top-enter-active, .top-leave-active{
+    transition: all .5s;
+}
+
+// 底部进出
+.bottom-enter, .bottom-leave-to{
+    transform: translate3d(0,100%,0);
+}
+.bottom-enter-to, .bottom-leave{
+    transform: translate3d(0,0,0);
+}
+.bottom-enter-active, .bottom-leave-active{
+    transition: all .5s;
+}

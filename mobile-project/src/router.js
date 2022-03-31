@@ -10,7 +10,19 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
+      meta:1,
       component: () => import("@/views/Index")
     },
+    {
+      path:'/ticket',
+      name:'Ticket',
+      meta:2,
+      component:()=>import("@/views/Ticket")
+    },
+    {
+      path:"/setting",
+      name:"Setting",
+      component:()=>import("@/views/Setting")
+    }
   ]
 })
